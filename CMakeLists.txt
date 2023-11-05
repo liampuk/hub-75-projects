@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.12)
 
 # Change your executable name to something creative!
-set(NAME pico-boilerplate) # <-- Name your project/executable here!
+set(NAME hub-75-projects) # <-- Name your project/executable here!
 
 include(pimoroni_pico_import.cmake)
 include(pico_sdk_import.cmake)
@@ -23,14 +23,12 @@ add_executable(${NAME}
 # This assumes `pimoroni-pico` is stored alongside your project
 include(common/pimoroni_i2c)
 include(common/pimoroni_bus)
-include(libraries/bitmap_fonts/bitmap_fonts)
-include(libraries/hershey_fonts/hershey_fonts)
-include(libraries/pico_explorer/pico_explorer)
+include(libraries/pico_graphics/pico_graphics)
+include(libraries/interstate75/interstate75)
 
 # Don't forget to link the libraries you need!
 target_link_libraries(${NAME}
     pimoroni_i2c
-    pico_explorer # <-- List libraries here!
 )
 
 # create map/bin/hex file etc.
@@ -46,3 +44,7 @@ install(FILES
 set(CPACK_INCLUDE_TOPLEVEL_DIRECTORY OFF)
 set(CPACK_GENERATOR "ZIP" "TGZ")
 include(CPack)
+
+# Example Pico Pack projects
+add_subdirectory(test)
+add_subdirectory(interstate75)
