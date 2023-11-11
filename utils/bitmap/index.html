@@ -1,0 +1,131 @@
+<head>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div>
+    <div style="display: flex;" class="bit-container">
+      <div class="bit" onmousedown="set('00')" onmouseover="drag('00')" id="00"></div>
+      <div class="bit" onmousedown="set('10')" onmouseover="drag('10')" id="10"></div>
+      <div class="bit" onmousedown="set('20')" onmouseover="drag('20')" id="20"></div>
+      <div class="bit" onmousedown="set('30')" onmouseover="drag('30')" id="30"></div>
+      <div class="bit" onmousedown="set('40')" onmouseover="drag('40')" id="40"></div>
+    </div>
+    <div style="display: flex;" class="bit-container">
+      <div class="bit" onmousedown="set('01')" onmouseover="drag('01')" id="01"></div>
+      <div class="bit" onmousedown="set('11')" onmouseover="drag('11')" id="11"></div>
+      <div class="bit" onmousedown="set('21')" onmouseover="drag('21')" id="21"></div>
+      <div class="bit" onmousedown="set('31')" onmouseover="drag('31')" id="31"></div>
+      <div class="bit" onmousedown="set('41')" onmouseover="drag('41')" id="41"></div>
+    </div>
+    <div style="display: flex;" class="bit-container">
+      <div class="bit" onmousedown="set('02')" onmouseover="drag('02')" id="02"></div>
+      <div class="bit" onmousedown="set('12')" onmouseover="drag('12')" id="12"></div>
+      <div class="bit" onmousedown="set('22')" onmouseover="drag('22')" id="22"></div>
+      <div class="bit" onmousedown="set('32')" onmouseover="drag('32')" id="32"></div>
+      <div class="bit" onmousedown="set('42')" onmouseover="drag('42')" id="42"></div>
+    </div>
+    <div style="display: flex;" class="bit-container">
+      <div class="bit" onmousedown="set('03')" onmouseover="drag('03')" id="03"></div>
+      <div class="bit" onmousedown="set('13')" onmouseover="drag('13')" id="13"></div>
+      <div class="bit" onmousedown="set('23')" onmouseover="drag('23')" id="23"></div>
+      <div class="bit" onmousedown="set('33')" onmouseover="drag('33')" id="33"></div>
+      <div class="bit" onmousedown="set('43')" onmouseover="drag('43')" id="43"></div>
+    </div>
+    <div style="display: flex;" class="bit-container">
+      <div class="bit" onmousedown="set('04')" onmouseover="drag('04')" id="04"></div>
+      <div class="bit" onmousedown="set('14')" onmouseover="drag('14')" id="14"></div>
+      <div class="bit" onmousedown="set('24')" onmouseover="drag('24')" id="24"></div>
+      <div class="bit" onmousedown="set('34')" onmouseover="drag('34')" id="34"></div>
+      <div class="bit" onmousedown="set('44')" onmouseover="drag('44')" id="44"></div>
+    </div>
+    <div style="display: flex;" class="bit-container">
+      <div class="bit" onmousedown="set('05')" onmouseover="drag('05')" id="05"></div>
+      <div class="bit" onmousedown="set('15')" onmouseover="drag('15')" id="15"></div>
+      <div class="bit" onmousedown="set('25')" onmouseover="drag('25')" id="25"></div>
+      <div class="bit" onmousedown="set('35')" onmouseover="drag('35')" id="35"></div>
+      <div class="bit" onmousedown="set('45')" onmouseover="drag('45')" id="45"></div>
+    </div>
+    <div style="display: flex;" class="bit-container">
+      <div class="bit" onmousedown="set('06')" onmouseover="drag('06')" id="06"></div>
+      <div class="bit" onmousedown="set('16')" onmouseover="drag('16')" id="16"></div>
+      <div class="bit" onmousedown="set('26')" onmouseover="drag('26')" id="26"></div>
+      <div class="bit" onmousedown="set('36')" onmouseover="drag('36')" id="36"></div>
+      <div class="bit" onmousedown="set('46')" onmouseover="drag('46')" id="46"></div>
+    </div>
+    <div style="display: flex;" class="bit-container">
+      <div class="bit" onmousedown="set('07')" onmouseover="drag('07')" id="07"></div>
+      <div class="bit" onmousedown="set('17')" onmouseover="drag('17')" id="17"></div>
+      <div class="bit" onmousedown="set('27')" onmouseover="drag('27')" id="27"></div>
+      <div class="bit" onmousedown="set('37')" onmouseover="drag('37')" id="37"></div>
+      <div class="bit" onmousedown="set('47')" onmouseover="drag('47')" id="47"></div>
+    </div>
+  </div>
+  <div id="small">
+    <div style="display: flex;" class="bit-container">
+      <div class="bit" onmousedown="set('00')" onmouseover="drag('00')" id="s00"></div>
+      <div class="bit" onmousedown="set('10')" onmouseover="drag('10')" id="s10"></div>
+      <div class="bit" onmousedown="set('20')" onmouseover="drag('20')" id="s20"></div>
+      <div class="bit" onmousedown="set('30')" onmouseover="drag('30')" id="s30"></div>
+      <div class="bit" onmousedown="set('40')" onmouseover="drag('40')" id="s40"></div>
+    </div>
+    <div style="display: flex;" class="bit-container">
+      <div class="bit" onmousedown="set('01')" onmouseover="drag('01')" id="s01"></div>
+      <div class="bit" onmousedown="set('11')" onmouseover="drag('11')" id="s11"></div>
+      <div class="bit" onmousedown="set('21')" onmouseover="drag('21')" id="s21"></div>
+      <div class="bit" onmousedown="set('31')" onmouseover="drag('31')" id="s31"></div>
+      <div class="bit" onmousedown="set('41')" onmouseover="drag('41')" id="s41"></div>
+    </div>
+    <div style="display: flex;" class="bit-container">
+      <div class="bit" onmousedown="set('02')" onmouseover="drag('02')" id="s02"></div>
+      <div class="bit" onmousedown="set('12')" onmouseover="drag('12')" id="s12"></div>
+      <div class="bit" onmousedown="set('22')" onmouseover="drag('22')" id="s22"></div>
+      <div class="bit" onmousedown="set('32')" onmouseover="drag('32')" id="s32"></div>
+      <div class="bit" onmousedown="set('42')" onmouseover="drag('42')" id="s42"></div>
+    </div>
+    <div style="display: flex;" class="bit-container">
+      <div class="bit" onmousedown="set('03')" onmouseover="drag('03')" id="s03"></div>
+      <div class="bit" onmousedown="set('13')" onmouseover="drag('13')" id="s13"></div>
+      <div class="bit" onmousedown="set('23')" onmouseover="drag('23')" id="s23"></div>
+      <div class="bit" onmousedown="set('33')" onmouseover="drag('33')" id="s33"></div>
+      <div class="bit" onmousedown="set('43')" onmouseover="drag('43')" id="s43"></div>
+    </div>
+    <div style="display: flex;" class="bit-container">
+      <div class="bit" onmousedown="set('04')" onmouseover="drag('04')" id="s04"></div>
+      <div class="bit" onmousedown="set('14')" onmouseover="drag('14')" id="s14"></div>
+      <div class="bit" onmousedown="set('24')" onmouseover="drag('24')" id="s24"></div>
+      <div class="bit" onmousedown="set('34')" onmouseover="drag('34')" id="s34"></div>
+      <div class="bit" onmousedown="set('44')" onmouseover="drag('44')" id="s44"></div>
+    </div>
+    <div style="display: flex;" class="bit-container">
+      <div class="bit" onmousedown="set('05')" onmouseover="drag('05')" id="s05"></div>
+      <div class="bit" onmousedown="set('15')" onmouseover="drag('15')" id="s15"></div>
+      <div class="bit" onmousedown="set('25')" onmouseover="drag('25')" id="s25"></div>
+      <div class="bit" onmousedown="set('35')" onmouseover="drag('35')" id="s35"></div>
+      <div class="bit" onmousedown="set('45')" onmouseover="drag('45')" id="s45"></div>
+    </div>
+    <div style="display: flex;" class="bit-container">
+      <div class="bit" onmousedown="set('06')" onmouseover="drag('06')" id="s06"></div>
+      <div class="bit" onmousedown="set('16')" onmouseover="drag('16')" id="s16"></div>
+      <div class="bit" onmousedown="set('26')" onmouseover="drag('26')" id="s26"></div>
+      <div class="bit" onmousedown="set('36')" onmouseover="drag('36')" id="s36"></div>
+      <div class="bit" onmousedown="set('46')" onmouseover="drag('46')" id="s46"></div>
+    </div>
+    <div style="display: flex;" class="bit-container">
+      <div class="bit" onmousedown="set('07')" onmouseover="drag('07')" id="s07"></div>
+      <div class="bit" onmousedown="set('17')" onmouseover="drag('17')" id="s17"></div>
+      <div class="bit" onmousedown="set('27')" onmouseover="drag('27')" id="s27"></div>
+      <div class="bit" onmousedown="set('37')" onmouseover="drag('37')" id="s37"></div>
+      <div class="bit" onmousedown="set('47')" onmouseover="drag('47')" id="s47"></div>
+    </div>
+  </div>
+
+  <p id="hex">0x00,0x00,0x00,0x00,0x00</p>
+
+  <div style="display: flex">
+    <div class="clear" onmousedown="copy()">Copy</div>
+    <div class="clear" onmousedown="clearBitmap()" style="margin-left: 8px;">Clear</div>
+  </div>
+
+</body>
